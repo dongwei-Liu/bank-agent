@@ -7,7 +7,7 @@
 
 | 路径 | 归属模块与用途 | 生成物 |
 | --- | --- | --- |
-| GitHub `dongwei-Liu/bank-agent` | 当前项目公开源码仓库；仅从当前代码树建立初始历史，不包含既有 Private 源仓库提交历史 | 否 |
+| GitHub `dongwei-Liu/bank-agent` | 当前项目公开源码仓库；默认分支 `main`，初始快照提交为 `9f59451526487fe58330792db8943c48f5e738f5`，经匿名克隆验证；不包含既有 Private 源仓库提交历史 | 否 |
 | 公开快照排除项 | `tools/vscode/` 含本机绝对路径，仅保留在本地源工作区；`.env`、`.runtime/`、虚拟环境、`node_modules/`、构建产物、本机 JDK/Gradle 和独立上游 `platform/fineract/` 均不属于公开源码快照 | — |
 | 公开快照目录 | 277 个受管文件，按 `apps/backend`、`apps/frontend`、`docs`、`infrastructure`、`scripts`、`tests` 分组；目录用途见项目根目录 `README.md` | 否 |
 
