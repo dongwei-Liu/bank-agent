@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-09T09:27:53.933670+00:00",
+  "isolated": true,
+  "checks": {
+    "transfer": {
+      "status": "passed",
+      "debit": "1.23",
+      "credit": "1.23",
+      "response_fields": [
+        "currency",
+        "fromAccount",
+        "fromAccountType",
+        "fromClient",
+        "fromOffice",
+        "from_transaction_id",
+        "id",
+        "reversed",
+        "toAccount",
+        "toAccountType",
+        "toClient",
+        "toOffice",
+        "to_transaction_id",
+        "transferAmount",
+        "transferDate",
+        "transferDescription"
+      ]
+    },
+    "native_idempotency": {
+      "status": "passed",
+      "repeat_response": {
+        "savingsId": 5,
+        "resourceId": 23
+      }
+    },
+    "transaction_page": {
+      "status": "passed",
+      "offset_semantics": "page",
+      "response_fields": [
+        "total",
+        "content",
+        "pageable"
+      ]
+    },
+    "fixed_activation": {
+      "status": "passed",
+      "savings_debit": "100",
+      "principal": "100.000000"
+    },
+    "activation_idempotency": {
+      "status": "passed"
+    },
+    "premature_close": {
+      "status": "passed",
+      "savings_credit": "100.000000",
+      "holding_status": {
+        "id": 700,
+        "code": "savingsAccountStatusType.pre.mature.closure",
+        "value": "Premature Closed",
+        "submittedAndPendingApproval": false,
+        "approved": false,
+        "rejected": false,
+        "withdrawnByApplicant": false,
+        "active": false,
+        "closed": false,
+        "prematureClosed": true,
+        "transferInProgress": false,
+        "transferOnHold": false,
+        "matured": false
+      }
+    },
+    "mature_close": {
+      "status": "passed",
+      "savings_credit": "1000.050000",
+      "principal": "1000",
+      "interest": "0.050000"
+    }
+  },
+  "bill_readback": {
+    "totals": {
+      "income": "10000.000000",
+      "fixed_transfer": "6900.000000",
+      "transfer": "7.440000",
+      "interest": "0.150000"
+    },
+    "transaction_count": 28,
+    "snapshot_atomic": false
+  }
+}

@@ -1,0 +1,38 @@
+# Web API
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# Data contract and validation
+pydantic==2.10.5
+pydantic-settings==2.7.1
+
+# Fineract HTTP client
+httpx==0.28.1
+
+# Agent orchestration and OpenAI-compatible model client
+langgraph==1.2.14
+langchain-openai==1.7.0
+
+# Database (self-owned tables)
+SQLAlchemy==2.0.37
+
+# Tests
+pytest==8.3.4
+
+# Business persistence and password hashing
+alembic==1.14.1
+psycopg[binary]==3.2.13
+argon2-cffi==23.1.0
+cryptography==46.0.3
+
+# CPU anomaly detection; training/loading use identical pinned versions
+scikit-learn==1.9.1
+skops==0.16.0
+# Keep the existing Python 3.11 floor; newer numerical releases require 3.12.
+numpy==2.4.6; python_version < "3.12"
+numpy==2.5.4; python_version >= "3.12"
+scipy==1.17.1; python_version < "3.12"
+scipy==1.18.1; python_version >= "3.12"
+joblib==1.6.0
+threadpoolctl==3.7.0
+narwhals==2.27.1
